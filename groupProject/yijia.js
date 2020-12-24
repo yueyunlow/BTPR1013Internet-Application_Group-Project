@@ -37,3 +37,36 @@ function openExplain(evt, jobPosition) {
             evt.currentTarget.className += " active";
     }
 }
+//contact-us validate user input.
+function validateForm() {
+    var y= document.getElementById("message").value;
+    if(y == "") {
+      alert("Message cannot be empty!!!");
+      return false;
+    }
+    else{
+      alert("Submit Successful");
+      return true;
+    }
+  }
+window.onload=function(){
+
+    var submitBtn = document.getElementById("submit");
+
+    submitBtn.onclick = function () {
+        if(!document.getElementById("privacy policy").checked) {
+            alert("Please Agree Our Privacy Policy");
+            return false;
+        }
+    };
+  }
+
+//nav bar responsive
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsivenav";
+    } else {
+        x.className = "topnav";
+    }
+}

@@ -1633,4 +1633,81 @@ input{
     color: #ffffff;
     font-weight: normal;
 }
-  
+.accordion {
+    background-image: linear-gradient(to left, #a00000,#c62128);
+    color: rgb(10, 10, 10);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid white;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial,sans-serif;
+    transition: 1.0s;
+    font-weight: bold;
+    color:white;
+    
+}
+
+button.accordion.active {
+    outline: #f71735;
+}
+
+button.accordion:defined {
+    outline: none;
+}
+
+.accordion:hover {
+    background-image: linear-gradient(to bottom right, #db3445 ,#f71735);
+     
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #ffffff;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.accordion.active:after {
+    content: "\2212";
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-image: linear-gradient(to left,#f0e4bc,#e7e7d2,#f7e7bd);
+    overflow: hidden;
+    transition: 0.3s;
+    border: none;
+}
+.demo { 
+    width: 100%;
+    border-top:1px solid #1C1212; 
+    border-bottom:1px solid #1C1212; 
+    border-collapse:collapse; 
+    padding:5px; 
+    text-align:center;
+} 
+.demo th { 
+    border-top:1px solid #000000; 
+    border-bottom:1px solid  #000000;; 
+    padding:5px;  
+} 
+.demo td { 
+    padding:5px; 
+}
+.align{
+    text-align: left;
+} 
+#page{
+    background-color:#FFF5F3;
+    margin-left: auto;
+    margin-right: auto;
+    color:black;
+
+}
