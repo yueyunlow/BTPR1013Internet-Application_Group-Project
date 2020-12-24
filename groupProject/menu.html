@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link rel="stylesheet" href="yijia.css">
+
+        <script src="yijia.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <title>MENU | 億家海鮮 YiJia Seafood</title>
+        <!--css-->
+        <style>
+        .accordion {
+            background-image: linear-gradient(to left, #a00000,#c62128);
+            color: rgb(10, 10, 10);
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: 1px solid white;
+            text-align: center;
+            outline: none;
+            font-size: 15px;
+            font-family: 'Open Sans', 'Helvetica Neue', Arial,sans-serif;
+            transition: 1.0s;
+            font-weight: bold;
+            color:white;
+            
+        }
+
+        button.accordion.active {
+            outline: #f71735;
+        }
+        
+        button.accordion:defined {
+            outline: none;
+        }
+        
+        .accordion:hover {
+            background-image: linear-gradient(to bottom right, #db3445 ,#f71735);
+             
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: #ffffff;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .accordion.active:after {
+        content: "\2212";
+        color: #ffffff;
+        font-weight: bold;
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-image: linear-gradient(to left,#f0e4bc,#e7e7d2,#f7e7bd);
+            overflow: hidden;
+            transition: 0.3s;
+            border: none;
+        }
+        .demo { 
+            width: 100%;
+            border-top:1px solid #1C1212; 
+            border-bottom:1px solid #1C1212; 
+            border-collapse:collapse; 
+            padding:5px; 
+            text-align:center;
+            
+            
+        } 
+        .demo th { 
+            border-top:1px solid #000000; 
+            border-bottom:1px solid  #000000;; 
+            padding:5px;  
+        } 
+        .demo td { 
+             
+            padding:5px; 
+        }
+        .align{
+            text-align: left;
+        } 
+        #page{
+            background-color:#FFF5F3;
+            margin-left: auto;
+            margin-right: auto;
+            color:black;
+
+        }
+
+
+        
+            
+        
+        </style>
+        </head>
+
+        <body>
+        <button onclick="topFunction()" id="back2top" title="Go to top">Top</button>
+        
+        <div class="wrap"><!--whole body content-->
+
+            <div class="topnav" id="myTopnav">
+                <div class="topnav-group">
+                    <a href="index.html" class="topnav-logo" style="padding: 12px 5px 2px 0px;font-size:20px;margin-left:4%;padding: 0%;font-family: LibreBaskerville;"><img src="YiJiaLogo.png" alt="YiJiaLogo" style="max-width: 45px; max-height: 45px;"/><span>億家海鮮 Yi Jia Seafood</span></a>
+                    <a href="about.html">ABOUT</a>
+                    <a href="menu.html">MENU</a>
+                    <a href="award.html">AWARD</a>
+                    <a href="branch.html">BRANCH</a>
+                    <a href="career.html">CAREER</a>
+                    <a href="contact.html">CONTACT</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+        
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                        x.className += " responsivenav";
+                        } else {
+                        x.className = "topnav";
+                        }
+                    }
+                </script>
+            </div>
+            <div class="menu-header-wrap"><!--HEADER TEXT-->
+                <div class="row justify-content-center branch-header-inner">
+                    <h2 class="branch-title fade-in-effect" style="color: #ffffff;">MENU</h2>
+                </div>
+            </div>
+            <div class="divide-line" style="line-height:3px;box-shadow: 0 2px 4px rgba(45,62,80,0.12);">&nbsp;</div>
+            
+            <div style="padding-bottom: 1rem;padding-top: 1rem;">
+                
+                <button class="accordion">Soup</button>
+                <div class="panel">
+                    <h1 style="text-align:left;">Soup</h1>
+                    <table class="demo">
+                        <thead>
+                            <tr style="font-size:25px;">
+                            <th>Number</th>
+                            <th>Name</th>
+                            <th>S</th>
+                            <th>M</th>
+                            <th>L</th>
+                            <th>XL</th>
+                        </tr>
+                        </thead>
+                        <tbody style="font-size:20px;">
+                            <tr>
+                                <td>S1</td>
+                                <td class="align">Braised Shark's Fin Soup With Sea Treasure</td>
+                                <td>80</td>
+                                <td>120</td>
+                                <td>160</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>S2</td>
+                                <td class="align">Braised Shark's Fin Soup With Dried Scallops & Crab Meat</td>
+                                <td>60</td>
+                                <td>90</td>
+                                <td>120</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>S3</td>
+                                <td class="align">Braised Fish Lips Soup With Seafood</td>
+                                <td>40</td>
+                                <td>60</td>
+                                <td>80</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>S4</td>
+                                <td class="align">Bitter Gourd Soup</td>
+                                <td>8</td>
+                                <td>12</td>
+                                <td>16</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>S5</td>
+                                <td class="align">Pig Stomach Soup In Claypot</td>
+                                <td>12</td>
+                                <td>18</td>
+                                <td>24</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>S6</td>
+                                <td class="align">Seafood TomYam Soup</td>
+                                <td>12</td>
+                                <td>18</td>
+                                <td>24</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>S7</td>
+                                <td class="align">Egg Soup With Ginger Wine</td>
+                                <td>8</td>
+                                <td>12</td>
+                                <td>16</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>S8</td>
+                                <td class="align">Salted Vegetables Soup With Beancurd</td>
+                                <td>8</td>
+                                <td>12</td>
+                                <td>16</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>S9</td>
+                                <td class="align">Hot & Soup Szechuan Soup</td>
+                                <td>20</td>
+                                <td>30</td>
+                                <td>40</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>S10</td>
+                                <td class="align">Double-Boiled Cordceps Soup (Please order in advanced)  </td>
+                                <td colspan="2">58(Five Person)</td>
+                                <td colspan="2">98(Ten Person)</td>
+                            </tr>
+                            <tr>
+                                <td>S11</td>
+                                <td class="align">Double-Boiled Herbal Soup With Pork Ribs</td>
+                                <td colspan="2">58(Five Person)</td>
+                                <td colspan="2">98(Ten Person)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                </div>
+                <button class="accordion">Povltry</button>
+                <div class="panel">
+                    <h1 style="text-align:left;">Povltry</h1>
+                    <table class="demo">
+                        <thead>
+                            <tr style="font-size:25px;">
+                                <th>Number</th>
+                                <th>Name</th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                                <th>XL</th>
+                            </tr>
+                        </thead>
+                        <tbody style="font-size:20px;">
+                            <tr>
+                                <td>P1</td>
+                                <td class="align">Yi Jia Crispy Chicken</td>
+                                <td>9</td>
+                                <td>18</td>
+                                <td>27</td>
+                                <td>36</td>
+                            </tr>
+                            <tr>
+                                <td>P2</td>
+                                <td class="align">Stir-Fried Chicken With Dried Chilli</td>
+                                <td>15</td>
+                                <td>22</td>
+                                <td>30</td>
+                                <td>38</td>
+                            </tr>
+                            <tr>
+                                <td>P3</td>
+                                <td class="align">Crispy Chicken Wing With Shrimps Sauce</td>
+                                <td>16</td>
+                                <td>24</td>
+                                <td>32</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <td>P4</td>
+                                <td class="align"> Fried Chicken Mongolian Style</td>
+                                <td>15</td>
+                                <td>22</td>
+                                <td>30</td>
+                                <td>38</td>
+                            </tr>
+                            <tr>
+                                <td>P5</td>
+                                <td class="align">Chicken Pot With Salted Fish</td>
+                                <td>16</td>
+                                <td>24</td>
+                                <td>32</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <td>P6</td>
+                                <td class="align"> Fried Chicken With Butter Cream </td>
+                                <td>15</td>
+                                <td>22</td>
+                                <td>30</td>
+                                <td>38</td>
+                            </tr>
+                            <tr>
+                                <td>P7</td>
+                                <td class="align">Herbal Chicken (Please Order in Advanced) *</td>
+                                <td colspan="4">each 48</td>
+                            </tr>  
+                        </tbody>
+                    </table>
+                    <br>
+                </div>
+
+                <button class="accordion">Live Fish</button>
+                <div class="panel">
+                    <h1 style="text-align:left;">Live Fish</h1>
+                    <table class="demo">
+                        <thead>
+                            <tr style="font-size:25px;">
+                                <th>Number</th>
+                                <th>Name</th>
+                                <th>Per 100G</th>
+                            </tr>
+                        </thead>
+                        <tbody style="font-size:20px;">
+                            <tr>
+                                <td>L1</td>
+                                <td class="align"> Goby Fish</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>L2</td>
+                                <td class="align">Tilapia Fsih</td>
+                                <td>4.50</td>
+                            </tr>
+                            <tr>
+                                <td>L3</td>
+                                <td class="align">Seabass</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>L4</td>
+                                <td class="align">Golden Pomfret </td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>L5</td>
+                                <td class="align">Garoupa</td>
+                                <td>9.50</td>
+                            </tr>
+                            <tr>
+                                <td>L6</td>
+                                <td class="align">Humphead Snapper</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>L7</td>
+                                <td class="align">Long Hu Garoupa </td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>L8</td>
+                                <td class="align">God Fish </td>
+                                <td>22</td>
+                            </tr>
+                            <tr>
+                                <td>L9</td>
+                                <td class="align">Roughy Fish</td>
+                                <td>13</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                </div>
+                <button class="accordion">Fish Head</button>
+                <div class="panel">
+                    <h1 style="text-align:left;">Fish Head</h1>
+                    <table class="demo">
+                        <thead>
+                            <tr style="font-size:25px;">
+                                <th>Number</th>
+                                <th>Name</th>
+                                <th>S</th>
+                                <th>L</th>
+                            </tr>
+                        </thead>
+                        <tbody style="font-size:20px;">
+                            <tr>
+                                <td>F1</td>
+                                <td class="align">Curry Fish Head</td>
+                                <td>36</td>
+                                <td>60</td>
+                            </tr>
+                            <tr>
+                                <td>F2</td>
+                                <td class="align">Steamed Fish Head With Thai Sauce</td>
+                                <td>36</td>
+                                <td>60</td>
+                            </tr>
+                            <tr>
+                                <td>F3</td>
+                                <td class="align">Fish Head Steam Boat</td>
+                                <td>36</td>
+                                <td>60</td>
+                            </tr>
+                            <tr>
+                                <td>F4</td>
+                                <td class="align">Fried Fish Head With Curry Paste</td>
+                                <td>36</td>
+                                <td>60</td>
+                            </tr>
+                            <tr>
+                                <td>F5</td>
+                                <td class="align">Steamed Fish Head With Black Bean Sauce</td>
+                                <td>36</td>
+                                <td>60</td>
+                            </tr>
+                            <tr>
+                                <td>F6</td>
+                                <td class="align">Steamed Fish With Nyonya Sause</td>
+                                <td>36</td>
+                                <td>60</td>
+                            </tr>
+                            <tr>
+                                <td>F7</td>
+                                <td class="align">Steamed Fish Head With Assam Sauce</td>
+                                <td>36</td>
+                                <td>60</td>
+                            </tr>
+                            <tr>
+                                <td>F8</td>
+                                <td class="align">Braised Fish Head In Claypot</td>
+                                <td>36</td>
+                                <td>60</td>
+                            </tr>
+                            <tr>
+                                <td>F9</td>
+                                <td class="align">Hometown Fish Head In Claypot</td>
+                                <td>36</td>
+                                <td>60</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                </div>
+
+                <button class="accordion">Dried Seafood</button>
+                <div class="panel">
+                    <h1 style="text-align:left;">Dried Seafood</h1>
+                    <table class="demo">
+                        <thead>
+                            <tr style="font-size:25px;">
+                                <th>Number</th>
+                                <th>Name</th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                            </tr>
+                        </thead>
+                        <tbody style="font-size:20px;">
+                            <tr>
+                                <td>D1</td>
+                                <td class="align">Braised Dried Seafood In Claypot</td>
+                                <td>60</td>
+                                <td>90</td>
+                                <td>120</td>
+                            </tr>
+                            <tr>
+                                <td>D2</td>
+                                <td class="align">Braised Sea Cucumber With Mushroom </td>
+                                <td>50</td>
+                                <td>75</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>D3</td>
+                                <td class="align">Braised Tendon With Fish Maw In Claypot</td>
+                                <td>40</td>
+                                <td>60</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>D4</td>
+                                <td class="align">Mind Monk Jump Over The Wall(Please order In Advanced)</td>
+                                <td colspan="3">Each 108</td>
+                            </tr>
+                            <tr>
+                                <td>D5</td>
+                                <td class="align">Oyster Sauce Four Head Abalone</td>
+                                <td colspan="3">Each 68</td>
+                            </tr>
+                            <tr>
+                                <td>D6</td>
+                                <td class="align">Hakka Feast(Please order In Advanced)</td>
+                                <td colspan="2" style="text-align:left;">268</td>
+                                <td style="text-align:right;">498</td>
+                            </tr>
+                            <br>    
+                        </tbody>
+                    </table>
+                    <br>
+                </div>
+
+                <button class="accordion">Regardless of Shrimp Meat</button>
+                <div class="panel">
+                    <h1 style="text-align:left;">Regardless of Shrimp Meat</h1>
+                    <table  class="demo">
+                        <thead>
+                            <tr style="font-size:25px;">
+                                <th>Number</th>
+                                <th>Name</th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                                <th>XL</th>
+                            </tr>
+                        </thead>
+                        <tbody style="font-size:20px;">
+                            <tr>
+                                <td>S1</td>
+                                <td class="align">Crispy Mantis Prawns Meat With Dried Chilli</td>
+                                <td>20</td>
+                                <td>30</td>
+                                <td>40</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>S2</td>
+                                <td class="align">Crispy Mantis Prawns Meat With Salt & Pepper</td>
+                                <td>20</td>
+                                <td>30</td>
+                                <td>40</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>S3</td>
+                                <td class="align">Cispy Mantis Prawns Meat With Salted Eggs</td>
+                                <td>20</td>
+                                <td>30</td>
+                                <td>40</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>S4</td>
+                                <td class="align">Crispy Mantis Prawns Meat With Cereral</td>
+                                <td>20</td>
+                                <td>30</td>
+                                <td>40</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>S5</td>
+                                <td class="align">Crispy Mantis Prawns Meat With Curry Powder Paste </td>
+                                <td>20</td>
+                                <td>30</td>
+                                <td>40</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>S6</td>
+                                <td class="align">Crispy Mantis Prawns Meat With Butter</td>
+                                <td>20</td>
+                                <td>30</td>
+                                <td>40</td>
+                                <td>50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                </div>
+                
+                <button class="accordion">Clam</button>
+                <div class="panel">
+                    <h1 style="text-align:left;">Clam</h1>
+                    <table class="demo">
+                        <thead>
+                            <tr style="font-size:25px;">
+                                <th>Number</th>
+                                <th>Name</th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                            </tr>
+                        </thead>
+                        <tbody style="font-size:20px;">
+                            <tr>
+                                <td>C1</td>
+                                <td class="align">Crispy Fried Squids </td>
+                                <td>18</td>
+                                <td>27</td>
+                                <td>36</td>
+                            </tr>
+                            <tr>
+                                <td>C2</td>
+                                <td class="align">Fried Squids With Oats Meal</td>
+                                <td>18</td>
+                                <td>27</td>
+                                <td>36</td>
+                            </tr>
+                            <tr>
+                                <td>C3</td>
+                                <td class="align">Fried Squids With Sambal </td>
+                                <td>18</td>
+                                <td>27</td>
+                                <td>36</td>
+                            </tr>
+                            <tr>
+                                <td>C4</td>
+                                <td class="align">Fried Squids With Thai Sauce</td>
+                                <td>18</td>
+                                <td>27</td>
+                                <td>36</td>
+                            </tr>
+                            <tr>
+                                <td>C5</td>
+                                <td class="align">Fried Squids With Salted </td>
+                                <td>18</td>
+                                <td>27</td>
+                                <td>36</td>
+                            </tr>
+                            <tr>
+                                <td>C6</td>
+                                <td class="align">Fried Whole Squids</td>
+                                <td>18</td>
+                                <td>27</td>
+                                <td>36</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                </div>
+
+                <button class="accordion">Prawn</button>
+                <div class="panel">
+                    <h1 style="text-align:left1;">Prawn</h1>
+                    <table class="demo">
+                        <thead>
+                            <tr style="font-size:25px;">
+                                <th>Number</th>
+                                <th>Name</th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                                <th>XL</th>
+                            </tr>
+                        </thead>
+                        <tbody style="font-size:20px;">
+                            <tr>
+                                <td>P1</td>
+                                <td class="align">Fried Prawns With Oats Meal</td>
+                                <td>30</td>
+                                <td>45</td>
+                                <td>60</td>
+                                <td>75</td>
+                            </tr>
+                            <tr>
+                                <td>P2</td>
+                                <td class="align">Fried Prawns With Salted Egg</td>
+                                <td>30</td>
+                                <td>45</td>
+                                <td>60</td>
+                                <td>75</td>
+                            </tr>
+                            <tr>
+                                <td>P3</td>
+                                <td class="align">Baked Prawns With Butter Cream</td>
+                                <td>30</td>
+                                <td>45</td>
+                                <td>60</td>
+                                <td>75</td>
+                            </tr>
+                            <tr>
+                                <td>P4</td>
+                                <td class="align">Curry Prawn Indo Style</td>
+                                <td>30</td>
+                                <td>45</td>
+                                <td>60</td>
+                                <td>75</td>
+                            </tr>
+                            <tr>
+                                <td>P5</td>
+                                <td class="align">Fried Prawns With Golden Egg Yolks</td>
+                                <td>30</td>
+                                <td>45</td>
+                                <td>60</td>
+                                <td>75</td>
+                            </tr>
+                            <tr>
+                                <td>P6</td>
+                                <td class="align">Pan-Fried Prawn With Black Sauce</td>
+                                <td>30</td>
+                                <td>45</td>
+                                <td>60</td>
+                                <td>75</td>
+                            </tr>
+                            <tr>
+                                <td>P7</td>
+                                <td class="align">Baked Prawn With Honey Sauce </td>
+                                <td>30</td>
+                                <td>45</td>
+                                <td>60</td>
+                                <td>75</td>
+                            </tr>
+                            <tr>
+                                <td>P8</td>
+                                <td class="align">Steamed Prawn With Egg</td>
+                                <td>30</td>
+                                <td>45</td>
+                                <td>60</td>
+                                <td>75</td>
+                            </tr>
+                            <tr>
+                                <td>P9</td>
+                                <td class="align">Cheese Prawn</td>
+                                <td>30</td>
+                                <td>45</td>
+                                <td>60</td>
+                                <td>75</td>
+                            </tr>
+                            <tr>
+                                <td>P10</td>
+                                <td class="align">Crispy Prawn With Passion Fruits</td>
+                                <td>30</td>
+                                <td>45</td>
+                                <td>60</td>
+                                <td>75</td>
+                            </tr>
+                            <tr>
+                                <td>P11</td>
+                                <td class="align">Crispy Prawn With Salad Sauce</td>
+                                <td>30</td>
+                                <td>45</td>
+                                <td>60</td>
+                                <td>75</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                </div>
+
+                <button class="accordion">Squids</button>
+                <div class="panel">
+                    <h1 style="text-align:left;">Squids</h1>
+                    <table  class="demo">
+                        <thead>
+                            <tr style="font-size:25px;">
+                                <th>Number</th>
+                                <th>Name</th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                            </tr>
+                        </thead>
+                        <tbody style="font-size:20px;">
+                            <tr>
+                                <td>S1</td>
+                                <td class="align">Crispy Fried Squids</td>
+                                <td>18</td>
+                                <td>27</td>
+                                <td>36</td>
+                            </tr>
+                            <tr>
+                                <td>S2</td>
+                                <td class="align">Fried Squids With Oats Meal</td>
+                                <td>18</td>
+                                <td>27</td>
+                                <td>36</td>
+                            </tr>
+                            <tr>
+                                <td>S3</td>
+                                <td class="align">Fried Squids With Sambal</td>
+                                <td>18</td>
+                                <td>27</td>
+                                <td>36</td>
+                            </tr>
+                            <tr>
+                                <td>S4</td>
+                                <td class="align">Fried Squids With Thai Sauce</td>
+                                <td>18</td>
+                                <td>27</td>
+                                <td>36</td>
+                            </tr>
+                            <tr>
+                                <td>S5</td>
+                                <td class="align">Fried Squids With Salted </td>
+                                <td>18</td>
+                                <td>27</td>
+                                <td>36</td>
+                            </tr>
+                            <tr>
+                                <td>S6</td>
+                                <td class="align">Fried Whole Squids</td>
+                                <td>18</td>
+                                <td>27</td>
+                                <td>36</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                </div>
+
+                <button class="accordion">Fish Fillet</button>
+                <div class="panel">
+                    <h1 style="text-align:left;">Fish Fillet</h1>
+                    <table class="demo">
+                        <thead>
+                            <tr style="font-size:25px;">
+                                <th>Number</th>
+                                <th>Name</th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                            </tr>
+                        </thead>
+                        <tbody style="font-size:20px;">
+                            <tr>
+                                <td>F1</td>
+                                <td class="align">Fried Fish Fillec With Sweet & Sour Sauce</td>
+                                <td>18</td>
+                                <td>27</td>
+                                <td>36</td>
+                            </tr>
+                            <tr>
+                                <td>F2</td>
+                                <td class="align">Fried Fish Fillet With Ginger & Spring onion</td>
+                                <td>18</td>
+                                <td>27</td>
+                                <td>36</td>
+                            </tr>
+                            <tr>
+                                <td>F3</td>
+                                <td class="align">Fried Fish Fillet With Curry Paste</td>
+                                <td>18</td>
+                                <td>27</td>
+                                <td>36</td>
+                            </tr>
+                            <tr>
+                                <td>F4</td>
+                                <td class="align">Stir-Fried Fish Fillet With Black Bean Sauce</td>
+                                <td>18</td>
+                                <td>27</td>
+                                <td>36</td>
+                            </tr>
+                            <tr>
+                                <td>F5</td>
+                                <td class="align">Crispy Fish Filet With Wasabi Salad</td>
+                                <td>18</td>
+                                <td>27</td>
+                                <td>36</td>
+                            </tr>
+                            <tr>
+                                <td>F6</td>
+                                <td class="align">Crispy Fish Skin With Salted & Pepper</td>
+                                <td>18</td>
+                                <td>27</td>
+                                <td>36</td>
+                            </tr>
+                            <tr>
+                                <td>F7</td>
+                                <td class="align">Crispy Fish Skin With Salted Egg</td>
+                                <td>18</td>
+                                <td>27</td>
+                                <td>36</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                </div>
+
+                <button class="accordion">Pork</button>
+                <div class="panel">
+                    <h1 style="text-align:left;">Pork</h1>
+                    <table class="demo">
+                        <thead>
+                            <tr style="font-size:25px;">
+                                <th>Number</th>
+                                <th>Name</th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                                <TH>XL</TH>
+                            </tr>
+                        </thead>
+                        <tbody style="font-size:20px;">
+                            <tr>
+                                <td>V1</td>
+                                <td class="align">Braised Pork Knuckle Shanghai Style</td>
+                                <td colspan="4">Each 32</td>
+                            </tr>
+                            <tr>
+                                <td>V2</td>
+                                <td class="align">Braised Pork With Bun</td>
+                                <td colspan="4">Each 32</td>
+                            </tr>
+                            <tr>
+                                <td>V3</td>
+                                <td class="align">Hot Plate Spanish Iberico Pork </td>
+                                <td>30</td>
+                                <td>45</td>
+                                <td>60</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>V4</td>
+                                <td class="align">Pan Fried Spanish Iberico Pork With Black Pepper</td>
+                                <td>30</td>
+                                <td>45</td>
+                                <td>60</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>V5</td>
+                                <td class="align">Pan fried Spanish Iberico Pork With Capsicum</td>
+                                <td>30</td>
+                                <td>45</td>
+                                <td>60</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>V6</td>
+                                <td class="align">Grilled Spanish Iberico Pork Ribs With Spice</td>
+                                <td colspan="2">Half 68</td>
+                                <td colspan="2">All 128</td>
+                            </tr>
+                            <tr>
+                                <td>V7</td>
+                                <td class="align">Pork Steak With Sweet & Sour Sauce</td>
+                                <td>15</td>
+                                <td>22</td>
+                                <td>30</td>
+                                <td>38</td>
+                            </tr>
+                            <tr>
+                                <td>V8</td>
+                                <td class="align">Pork Cubes With Sweet & Sour Sauce</td>
+                                <td>15</td>
+                                <td>22</td>
+                                <td>30</td>
+                                <td>38</td>
+                            </tr>
+                            <tr>
+                                <td>V9</td>
+                                <td class="align">Fried Pork Wich Saltud Fish In Claypot</td>
+                                <td>16</td>
+                                <td>24</td>
+                                <td>32</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <td>V10</td>
+                                <td class="align">Crispy Fried Pork Hakka Syle </td>
+                                <td>15</td>
+                                <td>22</td>
+                                <td>30</td>
+                                <td>38</td>
+                            </tr>
+                            <tr>
+                                <td>V11</td>
+                                <td class="align">Fried Pork Ribs With Fruit Paste</td>
+                                <td>18</td>
+                                <td>27</td>
+                                <td>36</td>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <td>V12</td>
+                                <td class="align">Fried Pork Ribs With Coffee</td>
+                                <td>18</td>
+                                <td>27</td>
+                                <td>36</td>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <td>V13</td>
+                                <td class="align">Fried Pork Ribs With Garlic</td>
+                                <td>18</td>
+                                <td>27</td>
+                                <td>36</td>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <td>V14</td>
+                                <td class="align">Poached Pork In Sze Chuan Style</td>
+                                <td colspan="4">Each 25</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                </div>
+
+                <button class="accordion">Vegetable</button>
+                <div class="panel">
+                    <h1 style="text-align:left;">Vegetable</h1>
+                    <table class="demo">
+                        <thead>
+                            <tr style="font-size:25px;">
+                                <th>Number</th>
+                                <th>Name</th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                                <TH>XL</TH>
+                            </tr>
+                        </thead>
+                        <tbody style="font-size:20px;">
+                            <tr>
+                                <td>V1</td>
+                                <td class="align">Stir-Fried Lotus Root With Mixed Vegetables</td>
+                                <td>15</td>
+                                <td>22</td>
+                                <td>30</td>
+                                <td>38</td>
+                            </tr>
+                            <tr>
+                                <td>V2</td>
+                                <td class="align">Kangkong Belacan</td>
+                                <td>10</td>
+                                <td>15</td>
+                                <td>20</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>V3</td>
+                                <td class="align">Stir-fried Baby Kailan With Oyster Sauce</td>
+                                <td>12</td>
+                                <td>18</td>
+                                <td>24</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>V4</td>
+                                <td class="align">Romaine Lettuce</td>
+                                <td>10</td>
+                                <td>15</td>
+                                <td>20</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>V5</td>
+                                <td class="align">Potatoes Leaf With Sambal</td>
+                                <td>10</td>
+                                <td>15</td>
+                                <td>20</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>V6</td>
+                                <td class="align">GStir-fried Broccoli</td>
+                                <td>12</td>
+                                <td>18</td>
+                                <td>24</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>V7</td>
+                                <td class="align">Braised Eggplant With Orak-Otak</td>
+                                <td>15</td>
+                                <td>22</td>
+                                <td>30</td>
+                                <td>38</td>
+                            </tr>
+                            <tr>
+                                <td>V8</td>
+                                <td class="align">Stir-Fried four Treasure With Sambal</td>
+                                <td>15</td>
+                                <td>22</td>
+                                <td>30</td>
+                                <td>38</td>
+                            </tr>
+                            <tr>
+                                <td>V9</td>
+                                <td class="align">Stir-Fried Hong Kong Cabbagge With Garlic</td>
+                                <td>12</td>
+                                <td>18</td>
+                                <td>24</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>V10</td>
+                                <td class="align">Stir-Fried French Bean With Minced Meat</td>
+                                <td>14</td>
+                                <td>21</td>
+                                <td>28</td>
+                                <td>35</td>
+                            </tr>
+                            <tr>
+                                <td>V11</td>
+                                <td class="align">Stir-Fried Seasonal Vegetables With Truffle Mushroom</td>
+                                <td>18</td>
+                                <td>27</td>
+                                <td>36</td>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <td>V12</td>
+                                <td class="align">Stir-Fried Scallops With Seasonal Vegetables </td>
+                                <td>36</td>
+                                <td>54</td>
+                                <td>72</td>
+                                <td>90</td>
+                            </tr>
+                            <tr>
+                                <td>V13</td>
+                                <td class="align"> Stir-Fried Shrimps With Seasonal Vegetables</td>
+                                <td>36</td>
+                                <td>54</td>
+                                <td>72</td>
+                                <td>90</td>
+                            </tr>
+                            <tr>
+                                <td>V14</td>
+                                <td class="align">Stir-Fried Green Dragon Vegetables</td>
+                                <td>14</td>
+                                <td>21</td>
+                                <td>28</td>
+                                <td>35</td>
+                            </tr>
+                            <tr>
+                                <td>V15</td>
+                                <td class="align">Braised Ten Head Abolone With Vegetables</td>
+                                <td colspan="4">Each 198</td>
+                            </tr>
+                            <tr>
+                                <td>V16</td>
+                                <td class="align">Stirred Fried Amaranth With Stock Soup</td>
+                                <td>18</td>
+                                <td>27</td>
+                                <td>36</td>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <td>V17</td>
+                                <td class="align">Stirred Fried Amaranth With Egg Gravy</td>
+                                <td>18</td>
+                                <td>27</td>
+                                <td>36</td>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <td>V18</td>
+                                <td class="align"> Pan Fried Eggplant With Sautee Spicy Sauce </td>
+                                <td>5 </td>
+                                <td>22</td>
+                                <td>30</td>
+                                <td>38</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                </div>
+        
+                <button class="accordion">Yam Ling</button>
+                <div class="panel">
+                    <h1 style="text-align:left;">Yam Ling</h1>
+                    <table  class="demo">
+                        <thead>
+                            <tr style="font-size:25px;">
+                                <th>Number</th>
+                                <th>Name</th>
+                                <th>One price</th>
+                            </tr>
+                        </thead>
+                        <tbody style="font-size:20px;">
+                            <tr>
+                                <td>Y1</td>
+                                <td class="align">Fried Prok Steak In Yam Ring</td>
+                                <td >Each 25</td>
+                            </tr>
+                            <tr>
+                                <td>Y2</td>
+                                <td class="align">Sweet & Sour Pork In Yam Ling</td>
+                                <td >Each 25</td>
+                            </tr>
+                            <tr>
+                                <td>Y3</td>
+                                <td class="align">Mixed Vegetables In Yam Ling </td>
+                                <td >Each 25</td>
+                            </tr>
+                            <tr>
+                                <td>Y4</td>
+                                <td class="align">Stir-Fried Chicken In Yam Ring</td>
+                                <td >Each 25</td>
+                            </tr>
+                            <tr>
+                                <td>Y5</td>
+                                <td class="align">Ying Ying In Yam Ring</td>
+                                <td >Each 25</td>
+                            </tr>  
+                        </tbody>
+                    </table>
+                    <br>
+                </div>
+
+                <button class="accordion">Beancurd</button>
+                <div class="panel">
+                    <h1 style="text-align:left;">Beancurd</h1>
+                    <table class="demo">
+                        <thead>
+                            <tr style="font-size:25px;">
+                                <th>Number</th>
+                                <th>Name</th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                            </tr>
+                        </thead>
+                        <tbody style="font-size:20px;">
+                            <tr>
+                                <td>B1</td>
+                                <td class="align">Yi Jia Crispy Beancurd</td>
+                                <td colspan="3" style="text-align: left;">Each 2.5(At least four)</td>
+                            </tr>
+                            <tr>
+                                <td>B2</td>
+                                <td class="align">Deep-Fried Beancurd With Three Type Egg</td>
+                                <td colspan="3" style="text-align: left;">Each 12</td>
+                            </tr>
+                            <tr>
+                                <td>B3</td>
+                                <td class="align">Braised Beancurd With Four Treasure</td>     
+                                <td>12</td>
+                                <td>18</td>
+                                <td>24</td>
+                            </tr>
+                            <tr>
+                                <td>B4</td>
+                                <td class="align">Braised Beancurd In Claypot</td>
+                                <td>12</td>
+                                <td>18</td>
+                                <td>24</td>
+                            </tr>
+                            <tr>
+                                <td>B5</td>
+                                <td class="align">Hot Plate Bencurd</td>
+                                <td>12</td>
+                                <td>18</td>
+                                <td>24</td>
+                            </tr> 
+                            <tr>
+                                <td>B6</td>
+                                <td class="align">Braised Beancurd With Dried Radish</td>
+                                <td>12</td>
+                                <td>18</td>
+                                <td>24</td>
+                            </tr> 
+                            <tr>
+                                <td>B7</td>
+                                <td class="align">Chaise Beancurd</td>
+                                <td>12</td>
+                                <td>18</td>
+                                <td>24</td>
+                            </tr>  
+                        </tbody>
+                    </table>
+                    <br>
+                </div>
+
+                <button class="accordion">Omelette</button>
+                <div class="panel">
+                    <h1 style="text-align:left;">Omelette</h1>
+                    <table class="demo">
+                        <thead>
+                            <tr style="font-size:25px;">
+                                <th>Number</th>
+                                <th>Name</th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                            </tr>
+                        </thead>
+                        <tbody style="font-size:20px;">
+                            <tr>
+                                <td>E1</td>
+                                <td class="align">Omelette With Bitter Gourd</td>
+                                <td>8</td>
+                                <td>10</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>E2</td>
+                                <td class="align">Omelette With Preserved Raddish</td>
+                                <td>8</td>
+                                <td>10</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>E3</td>
+                                <td class="align">Omelette With Onion</td>     
+                                <td>8</td>
+                                <td>10</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>E4</td>
+                                <td class="align">Omelette With Minced Meat</td>
+                                <td>8</td>
+                                <td>10</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>E5</td>
+                                <td class="align">Fu Yong Omelette</td>
+                                <td>8</td>
+                                <td>10</td>
+                                <td>12</td>
+                            </tr> 
+                            <tr>
+                                <td>E6</td>
+                                <td class="align">Omelette With Dice Shrimps</td>
+                                <td>8</td>
+                                <td>10</td>
+                                <td>12</td>
+                            </tr> 
+                            <tr>
+                                <td>E7</td>
+                                <td class="align">Omelette With Cheese</td>
+                                <td>10</td>
+                                <td>12</td>
+                                <td>14</td>
+                            </tr>  
+                        </tbody>
+                    </table>
+                    <br>
+                </div>
+
+                <div class="download-menu">
+                    <button class="download-button">
+                        <a href="jb.pdf" download="menu" target="_blank">
+                            <img src="download.png" alt="download menu" style="width: 43px;height: 43px;">
+                            <span>Download Menu Here</span>
+                        </a>
+                    </button>
+                </div>
+            </div>
+
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.display === "block") {
+                            panel.style.display = "none";
+                        } 
+                        else {
+                            panel.style.display = "block";
+                        }
+                    });
+                }
+            </script>
+
+            <footer class="text-white text-lg-start">
+                <div class="footer">
+                    <div style="display:inline-flex;">
+                        <img class="footer-logo" src="footer_logo.png" alt="footer-logo" style="height: 42px;width: auto;">
+                    </div>
+                    <div class="copyright">
+                        <a target="_blank" href="https://www.facebook.com/yijiaseafood/?ref=page_internal"><img src="facebook.png" style="height: auto;width: 30px;"></a>
+                        <span>&nbsp; © YIJIA F&B GROUP 2016</span>
+                    </div>
+                </div>
+            </footer>
+        
+        </div>
+        <script src="yijia.js"></script> <!--JS link for 'back to top' button-->
+        </body>
+</html>

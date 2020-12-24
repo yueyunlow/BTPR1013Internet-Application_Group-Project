@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link rel="stylesheet" href="yijia.css">
+
+        <script src="yijia.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <title>Career</title>
+
+</head>
+
+<body>
+  <button onclick="topFunction()" id="back2top" title="Go to top">Top</button><!--back to top button-->
+  <div class="wrap">
+    <div class="topnav" id="myTopnav">
+      <div class="topnav-group">
+        <a href="index.html" class="topnav-logo" style="padding: 12px 5px 2px 0px;font-size:20px;margin-left:4%;padding: 0%;font-family: LibreBaskerville;"><img src="YiJiaLogo.png" alt="YiJiaLogo" 
+            style="max-width: 45px; max-height: 45px;"/><span>億家海鮮 Yi Jia Seafood</span>
+        </a>
+        <a href="about.html">ABOUT</a>
+        <a href="menu.html">MENU</a>
+        <a href="award.html">AWARD</a>
+        <a href="branch.html">BRANCH</a>
+        <a href="career.html">CAREER</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsivenav";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+    </div>
+
+    <div class="career-header">
+      <div class="career-header-info">
+        <h1 class="career-header-title">Join Us!</h1>
+        <h2 class="career-header-text" >Yi Jia Seafood Sdn. Bhd.</h2>
+        <p class="career-header-text">Yi Jia, Move customers with heart, <br> Yi Family, To feel delicious with heart</p>
+        
+        <a href="contact.html" role="button" target="_self" class="btn link-contact">Contact Us</a>
+      </div>
+      <div class="career-header-img">
+        <img src="join-us.png" >
+      </div>
+    </div>
+    
+
+    <div class="tab">
+      <button class="tablinks" onclick="openExplain(event, 'manager')"><img src="floor-manager.png" class="hiringPeople"><br> Floor Manager</button>
+      <button class="tablinks" onclick="openExplain(event, 'cashier')"><img src="cashier.png" class="hiringPeople"><br> Cashier</button>
+      <button class="tablinks" onclick="openExplain(event, 'waiter')"><img src="waiter.png" class="hiringPeople"><br> Waiter/ Waitress</button>
+      <button class="tablinks" onclick="openExplain(event, 'chef')"><img src="chef.png" class="hiringPeople"><br> Chef Cooks</button>
+      <button class="tablinks" onclick="openExplain(event, 'assist')"><img src="kitchen-assist.png" class="hiringPeople"><br> Kitchen Helper</button>
+    </div>
+        
+    <div id="manager" class="tabcontent">
+      <h3>Mission</h3>
+      <p>Coordinate the entire operation of the restaurant. <br>
+        Respond to customer complaints. <br>
+        Ensure that all employees comply with the company's uniform standards. <br>
+        Assist customers to reserve seats. <br>
+        Provide advice to customers on the menu. <br>
+        Recruitment, training and motivating employees. <br>
+        Organize and supervise changes in the kitchen, waiting and cleaning staff.</p>
+    </div>
+        
+    <div id="cashier" class="tabcontent">
+      <h3>Mission</h3>
+      <p>Collect Payment by cash, credit card, coupon, or automatic debit. <br>
+        Send a receipt to the customer. <br>
+        To ensure that the amount is correct, and there are enough changes. <br>
+        Greet guests into places. <br>
+        Keep clean and orderly checkout area.</p>
+    </div>
+        
+    <div id="waiter" class="tabcontent">
+      <h3>Mission</h3>
+      <p>Professional and friendly. <br>
+        Team spirit. <br>
+        Effective communication skills with guests and staff. <br>
+        quick thinking. <br>
+        Basic math skills. <br>
+        Very attention to detai</p>
+    </div>
+        
+    <div id="chef" class="tabcontent">
+      <h3>Mission</h3>
+      <p>master all of the ingredients, to ensure the intergrity of each dish.</p>
+    </div>
+
+    <div id="assist" class="tabcontent">
+      <h3>Mission</h3>
+      <p>Coordinate the entire operation of the restaurant. <br>
+        Respond to customer complaints. <br>
+        Ensure that all employees comply with the company's uniform standards. <br>
+        Assist customers to reserve seats. <br>
+        Provide advice to customers on the menu. <br>
+        Recruitment, training and motivating employees. <br>
+        Organize and supervise changes in the kitchen, waiting and cleaning staff.</p>
+    </div>
+    
+    <footer class="text-white text-lg-start">
+      <div class="footer">
+          <div style="display:inline-flex;">
+              <img class="footer-logo" src="footer_logo.png" alt="footer-logo" style="height: 42px;width: auto;">
+          </div>
+          <div class="copyright">
+              <a target="_blank" href="https://www.facebook.com/yijiaseafood/?ref=page_internal"><img src="facebook.png" style="height: auto;width: 30px;"></a>
+              <span>&nbsp; © YIJIA F&B GROUP 2016</span>
+          </div>
+      </div>
+    </footer>
+  </div>
+  <script src="yijia.js"></script> <!--JS link for 'back to top' button-->
+</body>
+</html>
