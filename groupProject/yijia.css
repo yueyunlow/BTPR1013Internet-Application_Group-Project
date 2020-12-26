@@ -1,6 +1,10 @@
 .wrap{
     background-image: linear-gradient(to left,#f0e4bc,#e7e7d2,#f7e7bd);
     overflow: hidden;
+    min-height: 100vh; /* will cover the 100% of viewport */
+    display: block;
+    position: relative;
+    padding-bottom: 51px; /* height of footer */
 }
 
 .topnav-group {
@@ -461,6 +465,9 @@ ul.location_icon span {
 footer {
     background-image: linear-gradient(to bottom, #ac0a0a, #a20e0e);
     bottom: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 .footer{
     padding-top: 5px;
@@ -1772,13 +1779,22 @@ button.accordion:defined {
 .demo td { 
     padding:5px; 
 }
-.align{
+.align {
     text-align: left;
 } 
-#page{
+#page {
     background-color:#FFF5F3;
     margin-left: auto;
     margin-right: auto;
     color:black;
-
+}
+* {
+    box-sizing: border-box;
+}
+*:before, *:after {
+    box-sizing: border-box;
+}
+html, body {
+ height: 100%;
+ position: relative;
 }
