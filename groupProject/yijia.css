@@ -10,7 +10,7 @@
     overflow: hidden;
     position: relative;
     color: #33475b;
-    box-shadow: 0 2px 4px rgba(45,62,80,0.12);
+    
 }
     
 .topnav-group a {
@@ -42,6 +42,7 @@
     padding: 0px 16px 0px 38px;
     overflow: hidden;    
     background-image: linear-gradient(to bottom, #ac0a0a, #a20e0e);
+    box-shadow: 0 2px 4px rgba(45,62,80,0.12);
 }
   
 .topnav .icon {
@@ -53,6 +54,9 @@
     .topnav a.icon {
         float: right;
         display: block;
+    }
+    .topnav {
+        padding: 0px 16px 0px 16px !important;
     }
 }
     
@@ -1232,13 +1236,36 @@ header {
         margin-bottom: 2%;
     }
 }
+@media screen and (max-width: 500px) {
+    .CEO {
+        padding-left: 2% !important;
+        padding-right: 0 !important;
+    }
+}
+@media screen and (max-width: 382px) {
+    .winning-photo img{
+        width: 90%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .CEO {
+        padding-left: 1% !important;
+        padding-right: 0 !important;
+    }
+    .award-explain h3{
+        font-size: 0.9rem;
+    }
+}
 .contact-header-wrap {
     background-image: url('contact_bg.jpg');
+    background-size: cover;
     height: 600px;
 }
 .contact-header-inner{
     position: relative;
     width: 100%;
+    text-align: center;
 }
 .contact-title{
     color: rgb(94, 4, 4);
@@ -1251,19 +1278,63 @@ header {
     opacity: 1;
 }
 .contact-header-inner .header-deco-1 {
-    width: 550px;
+    width: 450px;
     opacity: .52;
-    position: absolute;
-    display: inline-block;
     z-index: 0;
-    top: 100px;
+    padding-top: 67px;
 }
 .contact-content{
     margin-left:10%;
     margin-right:10%; 
     border:none;
 
- }
+}
+@media screen and (max-width: 600px) {
+    .contact-header-wrap {
+        height: 450px;
+    }
+    .contact-header-inner .header-deco-1 {
+        width: 75%;
+        height: 300px;
+        opacity: .52;
+        z-index: 0;
+        padding-top: 40px;
+    }
+    .contact-title{
+        font-size: 2.5rem;
+        top: 210px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .contact-title{
+        font-size: 2rem !important;
+        top: 200px;
+    }
+}
+@media screen and (max-width: 367px) {
+    .contact-title{
+        width: 60%;
+        font-size: 1.8rem !important;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .contact-header-inner .header-deco-1 {
+        height: 250px;
+        padding-top: 40px;
+    }
+}
+.feedback-type, .request-type, .other-type {
+    display: inline-block;
+    margin-left: 1%;
+    margin-right: 2%;
+    font-size:18px;
+    margin-bottom: 1em;
+}
+@media screen and (max-width: 338px){
+    .feedback-type, .request-type, .other-type {
+        display: block;
+    }
+}
 .contact-btn {
     background-color: #ac0a0a;
     border: none;
@@ -1290,9 +1361,9 @@ input{
     border-top:none;
     border-right:none; 
     border-left:none; 
-    margin-left:22%;
+    margin-left: 10%;
     font-size:18px;
-    width:56%;
+    width:80%;
     text-align:justify;
     outline: none;
     padding-left: 9px;
