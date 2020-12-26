@@ -458,6 +458,9 @@ ul.location_icon span {
     outline: none; /* Remove outline */
     
 }
+audio {
+    width: 200px;
+}
 #back2top:hover {
     background-color: #a27943;
     color: white;
