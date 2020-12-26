@@ -1173,6 +1173,7 @@ header {
 .award-2013 img {
     height: auto;
     width: 100%;
+    min-height: 161px;
 }
 .award-2015 {
     padding: 3em 1em 2em 1em;
