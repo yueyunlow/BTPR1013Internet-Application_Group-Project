@@ -456,7 +456,7 @@ ul.location_icon span {
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    padding: 15px; /* Some padding */
+    
 }
 #back2top:hover {
     background-color: #a27943;
