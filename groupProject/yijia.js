@@ -18,6 +18,7 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+//Job Opening Tabs
 function openExplain(evt, jobPosition) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -37,6 +38,9 @@ function openExplain(evt, jobPosition) {
             evt.currentTarget.className += " active";
     }
 }
+// Get the element with id="defaultTabOpen" and click on it
+document.getElementById("defaultTabOpen").click();
+
 //contact-us validate user input.
 function validateForm() {
     var y= document.getElementById("message").value;
