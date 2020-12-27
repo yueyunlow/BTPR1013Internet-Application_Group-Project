@@ -1748,9 +1748,6 @@ input{
     }
 }
 @media screen and (max-width: 550px) {
-    .footer-logo {
-        display: none;
-    }
     .copyright {
         display: flex; 
         padding-top: 7px;
@@ -1790,11 +1787,7 @@ input{
     }
 }
 
-@media screen and (max-width: 354px) {
-    .footer-logo {
-        display: none;
-    }
-}
+
 .menu-header-wrap {
     background-color: #ffd397;
     height: 360px;
