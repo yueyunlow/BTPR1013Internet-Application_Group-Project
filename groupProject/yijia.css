@@ -1898,6 +1898,9 @@ button.accordion:defined {
     transition: 0.3s;
     border: none;
 }
+.panel h1 {
+    font-size: 22px;
+}
 .demo { 
     width: 100%;
     border-top:1px solid #1C1212; 
@@ -1909,10 +1912,12 @@ button.accordion:defined {
 .demo th { 
     border-top:1px solid #000000; 
     border-bottom:1px solid  #000000;; 
-    padding:5px;  
+    padding:5px;
+    font-size: 18px;  
 } 
 .demo td { 
     padding:5px; 
+    font-size: 16px;
 }
 .align {
     text-align: left;
@@ -1932,4 +1937,19 @@ button.accordion:defined {
 html, body {
  height: 100%;
  position: relative;
+}
+
+@media screen and (max-width: 600px) {
+    .stayTop {
+        vertical-align: top;
+    }
+    .demo td { 
+        font-size: 15px; 
+    }
+    .demo th { 
+        font-size: 16px; 
+    }
+    .panel h1 {
+        font-size: 20px;
+    }
 }
