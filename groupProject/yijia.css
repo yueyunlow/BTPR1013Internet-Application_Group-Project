@@ -1379,41 +1379,11 @@ input{
     outline: none;
     padding-left: 9px;
 }
-@media screen and (max-width: 942px) {
-    .career-header{
-        position: relative;
-        width: 100%;
-        height: 700px !important;
-    }
-    .career-header-info {
-        float: left;
-        padding-top: 2%;
-        padding-left: 7%;
-    }
-    .career-header img{
-        position: absolute;
-        height: 460px !important;
-        right: 20px;
-        bottom: 0;
-    }
-    .career-header-title {
-        font-family: hatton-bold;
-        font-size: 2.5rem !important;
-    }
-    .career-header h2{
-        font-weight: bold;
-        margin-bottom: 10px !important;
-        font-size: 2rem !important;
-    }
-    .career-header p{
-        font-size: 1.2rem !important;
-        padding-top: 8px !important;
-    }
-}
 .career-header-info {
     float: left;
     padding-top: 5%;
-    padding-left: 7%;
+    padding-left: 10%;
+    width: 50%;
 }
 .career-header{
     position: relative;
@@ -1422,25 +1392,8 @@ input{
 }
 .career-header-img img{
     position: absolute;
-    height: 560px;
-    right: 20px;
+    height: 510px;
     bottom: 0;
-}
-@media screen and (min-width: 401px) and (max-width: 483px){
-    .career-header-img img{
-        position: absolute;
-        height: 450px !important;
-        right: -3px !important;
-        bottom: 0;
-    }
-}
-@media screen and (max-width: 400px){
-    .career-header-img img{
-        position: absolute;
-        height: 400px !important;
-        right: -15px !important;
-        bottom: 0;
-    }
 }
 .career-header-title {
     font-family: hatton-bold;
@@ -1473,6 +1426,145 @@ input{
     color:white;
     border:2px #ac0a0a solid
 }
+@media screen and (min-width: 671px) and (max-width: 942px) {
+    .career-header{
+        position: relative;
+        width: 100%;
+        height: 440px !important;
+    }
+    .career-header-info {
+        float: left;
+        padding-top: 5%;
+        padding-left: 7%;
+        width: 50%;
+    }
+    .career-header img{
+        position: absolute;
+        height: 400px !important;
+        bottom: 0;
+    }
+    .career-header-title {
+        font-family: hatton-bold;
+        font-size: 2.5rem !important;
+    }
+    .career-header h2{
+        font-weight: bold;
+        margin-bottom: 10px !important;
+        font-size: 2rem !important;
+    }
+    .career-header p{
+        font-size: 1.2rem !important;
+        padding-top: 8px !important;
+    }
+}
+@media screen and (min-width: 484px) and (max-width: 670px) {
+    .career-header{
+        position: relative;
+        height: auto;
+    }
+    .career-header-info {
+        float: left;
+        padding-top: 5%;
+        padding-left: 7%;
+        width: 100%;
+    }
+    .career-header-img{
+        width: 100%;
+        text-align: right;
+        padding-right: 10%;
+    }
+    .career-header img{
+        position: relative;
+        height: 300px !important;
+        bottom: 0;
+    }
+    .career-header-title {
+        font-family: hatton-bold;
+        font-size: 2.5rem !important;
+    }
+    .career-header h2{
+        font-weight: bold;
+        margin-bottom: 10px !important;
+        font-size: 2rem !important;
+    }
+    .career-header p{
+        font-size: 1.2rem !important;
+        padding-top: 8px !important;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 483px){
+    .career-header{
+        position: relative;
+        height: auto;
+    }
+    .career-header-info {
+        float: left;
+        padding-top: 5%;
+        padding-left: 7%;
+        width: 100%;
+    }
+    .career-header-title {
+        font-family: hatton-bold;
+        font-size: 2.5rem !important;
+    }
+    .career-header h2{
+        font-weight: bold;
+        margin-bottom: 10px !important;
+        font-size: 2rem !important;
+    }
+    .career-header p{
+        font-size: 1.2rem !important;
+        padding-top: 8px !important;
+    }
+    .career-header-img {
+        text-align: right;
+        padding-right: 5%;
+    }
+    .career-header-img img{
+        position: relative;
+        height: 300px !important;
+        bottom: 0;
+        
+    }
+}
+@media screen and (max-width: 400px){
+    .career-header{
+        position: relative;
+        height: auto;
+    }
+    .career-header-info {
+        float: left;
+        padding-top: 5%;
+        padding-left: 7%;
+        padding-right: 7%;
+        width: 100%;
+    }
+    .career-header-img {
+        text-align: center;
+        
+    }
+    .career-header-img img{
+        position: relative;
+        height: 300px !important;
+        padding-top: 3%;
+        bottom: 0;
+    }
+    .career-header-title {
+        font-family: hatton-bold;
+        font-size: 2.5rem !important;
+    }
+    .career-header h2{
+        font-weight: bold;
+        margin-bottom: 10px !important;
+        font-size: 2rem !important;
+    }
+    .career-header p{
+        font-size: 1.2rem !important;
+        padding-top: 8px !important;
+    }
+}
+
 .tab {
     overflow: hidden;
     background-color: #f1f1f1;
@@ -1491,6 +1583,7 @@ input{
         height: 150px;
         width: 100%;
         background:rgb(212, 186, 136);
+        vertical-align: top;
     }
     .tabcontent {
         display: none;
@@ -1499,7 +1592,8 @@ input{
         border-top: none;
         text-align: center;
         background-image: linear-gradient(to right,  #e2c887fb, #f1d68ffb,#eece7dee);
-        height: 300px !important;
+        height: auto !important;
+        min-height: 350px;
     }
     .hiringPeople{
         width: 60px;
