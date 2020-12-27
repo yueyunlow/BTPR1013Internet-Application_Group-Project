@@ -1167,6 +1167,22 @@ header {
         position: absolute;
     }
 }
+@media screen and (max-width: 330px) {
+    .award-2019 .golden-taste-award {
+        position: absolute;
+        left: 10px;
+        width: 130px;
+        height: auto;
+        top: 45%;
+    }
+    .award-2019 .mtpn-logo {
+        height: auto;
+        width: 120px;
+        right: 10px;
+        top: 45%;
+        position: absolute;
+    }
+}
 .award-2013 {
     width: 100%;
 }
