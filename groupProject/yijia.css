@@ -1564,43 +1564,10 @@ input{
         padding-top: 8px !important;
     }
 }
-
 .tab {
     overflow: hidden;
     background-color: #f1f1f1;
 }
-@media screen and (max-width: 714px) {
-    .tab button {
-        background-color: inherit;
-        float: left;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 2px !important;
-        transition: 0.8s;
-        font-size: 12px !important;
-        margin: auto;
-        height: 150px;
-        width: 100%;
-        background:rgb(212, 186, 136);
-        vertical-align: top;
-    }
-    .tabcontent {
-        display: none;
-        padding: 18px 12px;
-        border: none;
-        border-top: none;
-        text-align: center;
-        background-image: linear-gradient(to right,  #e2c887fb, #f1d68ffb,#eece7dee);
-        height: auto !important;
-        min-height: 350px;
-    }
-    .hiringPeople{
-        width: 60px;
-        height: 60px;
-    }
-}
-
 .tab button {
     background-color: inherit;
     float: left;
@@ -1629,6 +1596,66 @@ input{
     text-align: center;
     background-image: linear-gradient(to right,  #e2c887fb, #f1d68ffb,#eece7dee);
     height: 250px;
+}
+@media screen and (min-width: 310px) and (max-width: 714px) {
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 0px !important;
+        transition: 0.8s;
+        font-size: 12px !important;
+        margin: auto;
+        height: 150px;
+        background:rgb(212, 186, 136);
+        vertical-align: top;
+    }
+    .tabcontent {
+        display: none;
+        padding: 18px 12px;
+        border: none;
+        border-top: none;
+        text-align: center;
+        background-image: linear-gradient(to right,  #e2c887fb, #f1d68ffb,#eece7dee);
+        height: auto !important;
+        min-height: 350px;
+    }
+    .hiringPeople{
+        width: 60px;
+        height: 60px;
+    }
+}
+@media screen and (max-width: 309px) {
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 0px !important;
+        transition: 0.8s;
+        font-size: 12px !important;
+        margin: auto;
+        height: 150px;
+        background:rgb(212, 186, 136);
+        vertical-align: top;
+    }
+    .tabcontent {
+        display: none;
+        padding: 18px 12px;
+        border: none;
+        border-top: none;
+        text-align: center;
+        background-image: linear-gradient(to right,  #e2c887fb, #f1d68ffb,#eece7dee);
+        height: auto !important;
+        min-height: 350px;
+    }
+    .hiringPeople{
+        width: 50px;
+        height: 50px;
+    }
 }
 @media only screen and (min-width: 701px) and (max-width: 900px) {
     .branch-inner .row .col-6 {
