@@ -527,7 +527,10 @@ h2{
         line-height: 1.2;
         padding-left: 2em;
         padding-top: 2em;
-        font-size: 2.3rem;
+        font-size: 1.8rem;
+    }
+    .header-text {
+	font-size: 1.9rem;
     }
     .index-header{
         padding-bottom: 10em;
