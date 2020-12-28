@@ -1732,7 +1732,7 @@ input{
         padding-top: 1em;
         max-width: 276px;
     }
-    .row {
+    .branch-inner .row {
         margin-left: 0px;
         margin-right: 0px;
     }
