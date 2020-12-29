@@ -905,7 +905,7 @@ header {
 }
 .branch-content {
     width: 100%;
-    padding: 5% 4% 4% 3%;
+    padding: 5% 4% 4% 5%;
 }
 .branch-inner-image {
     padding-left: 5%;
@@ -1722,7 +1722,7 @@ input{
         z-index: 0;
     }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 390px) {
     .branch-inner .row .col-6 {
         flex: 0 0 100%;
         position: relative;
@@ -1731,6 +1731,7 @@ input{
         padding-right: 0px !important;
         padding-top: 1em;
         max-width: 276px;
+        margin: 0 auto;
     }
     .branch-inner .row {
         margin-left: 0px;
@@ -1752,27 +1753,10 @@ input{
     .branch-inner-info a {
         font-size: 1rem;
     }
-    .branch-header-inner .header-deco-1 {
-        height: 190px;
-        width: auto;
-        position: absolute;
-        display: inline-block;
-        left: 15%;
-        top: 2px;
-        z-index: 0;
-    }
-    .branch-header-inner .header-deco-2 {
-        height: 190px;
-        width: auto;
-        position: absolute;
-        display: inline-block;
-        right: 15%;
-        top: 2px;
-        z-index: 0;
-    }
+    
     
 }
-@media screen and (min-width: 301px) and (max-width: 700px) {
+@media screen and (min-width: 391px) and (max-width: 700px) {
     .branch-inner .row .col-6 {
         flex: 0 0 100%;
         position: relative;
@@ -1781,6 +1765,7 @@ input{
         padding-left: 0 !important;
         padding-right: 0 !important;
         padding-top: 1em;
+        margin: 0 auto;
     }
     .branch-inner-info{
         padding-left: 1em;
@@ -1816,8 +1801,11 @@ input{
         top: 2px;
         z-index: 0;
     }
+    .branch-inner-image img{
+        width: 95%;
+    }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 390px) {
     .copyright {
         display: flex; 
         padding-top: 7px;
@@ -1880,7 +1868,7 @@ input{
         background-position: center;
     }
 }
-@media screen and (min-width: 301px) and (max-width: 550px) {
+@media screen and (min-width: 391px) and (max-width: 550px) {
     .copyright {
         display: flex; 
         padding-top: 7px;
