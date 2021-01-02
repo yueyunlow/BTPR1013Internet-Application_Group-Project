@@ -50,7 +50,7 @@ function validateForm() {
 
     var letters = /^[A-Za-z]+$/;  
     var email_val = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    var phno_val = /^\d{12}$/;
+    var phno_val = /^\d{11,12}$/;
 
     if(name==''||contactNumber==''||email==''||message==''){  
         alert("Enter each details correctly");
