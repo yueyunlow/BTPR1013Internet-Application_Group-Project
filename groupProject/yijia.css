@@ -1379,6 +1379,9 @@ header {
     border-radius: 15px;
     outline: none;
 }
+button:focus {
+    outline: none;
+}
 input{
     border: none;
     border-radius: 20px 20px 20px 20px;
