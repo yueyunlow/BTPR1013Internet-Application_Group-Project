@@ -61,7 +61,7 @@ function validateForm() {
         return false;  
     } 
     else if (!phno_val.test(contactNumber)){  
-        alert('Invalid phone number please enter valid phone number'); 
+        alert('Invalid phone number please enter valid phone number:60123456789'); 
         return false;  
     }   
     else if (!email_val.test(email)){  
