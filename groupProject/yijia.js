@@ -43,27 +43,40 @@ document.getElementById("defaultTabOpen").click();
 
 //contact-us validate user input.
 function validateForm() {
-    var y= document.getElementById("message").value;
-    if(y == "") {
-      alert("Message cannot be empty!!!");
-      return false;
-    }
-    else{
-      alert("Submit Successful");
-      return true;
-    }
-  }
-window.onload=function(){
+    var name = document.getElementById("name").value;  
+    var contactNumber = document.getElementById("contactNumber").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
 
-    var submitBtn = document.getElementById("submit");
+    var letters = /^[A-Za-z]+$/;  
+    var email_val = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    var phno_val = /^\d{12}$/;
 
-    submitBtn.onclick = function () {
-        if(!document.getElementById("privacy policy").checked) {
-            alert("Please Agree Our Privacy Policy");
-            return false;
-        }
-    };
-  }
+    if(name==''||contactNumber==''||email==''||message==''){  
+        alert("Enter each details correctly");
+        return false;  
+    }  
+    else if(!letters.test(name)){  
+        alert('Name is incorrect must contain alphabets only'); 
+        return false;  
+    } 
+    else if (!phno_val.test(contactNumber)){  
+        alert('Invalid phone number please enter valid phone number'); 
+        return false;  
+    }   
+    else if (!email_val.test(email)){  
+        alert('Invalid email format please enter valid email'); 
+        return false;  
+    }  
+    else if (document.getElementById("privacyPolicy").checked==false){  
+        alert('You must agree to the Privacy Policy first.'); 
+        return false;  
+    }
+    else {
+        alert('Submit successful');
+        return true;
+    }   
+}
 
 //nav bar responsive
 function myFunction() {
