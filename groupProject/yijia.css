@@ -1318,8 +1318,8 @@ header {
     margin-left:10%;
     margin-right:10%; 
     border:none;
-
 }
+
 @media screen and (max-width: 600px) {
     .contact-header-wrap {
         height: 450px;
@@ -1377,6 +1377,7 @@ header {
     margin-right:24%;
     text-align:center;
     border-radius: 15px;
+    outline: none;
 }
 input{
     border: none;
